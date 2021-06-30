@@ -1,6 +1,6 @@
 #include <iostream>
 #include <stdint.h>
-
+#include <iomanip>
 class Average
 {
     public:
@@ -34,6 +34,7 @@ class Average
     private:
         int32_t total=0;
         int16_t counter=0;
+
 
 
 
