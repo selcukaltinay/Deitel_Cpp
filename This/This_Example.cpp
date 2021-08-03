@@ -21,9 +21,21 @@ public:
         std::cout << "Number1 is:" << this->number1 << " Number2 is:" << this->number2 << "\n";
     }
 
+    static void setValue(int num)
+    {
+        value=num;
+    }
+
+    static int getValue()
+    {
+        return value;
+    }
+
+
 private:
     int number1;
     int number2;
+    static int value;
 };
 
 
@@ -34,6 +46,14 @@ int main()
     MathClass.print();
     MathClass.increase().increase().increase();
     MathClass.print();
+
+    /*
+    Static functions and variables
+    */
+    //std::cout << Math::getValue() << "\n";
+    //Math::setValue(34);
+    //std::cout << Math::getValue() << "\n";
+
 
     return 0;
 }
